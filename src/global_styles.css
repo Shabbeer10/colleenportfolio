@@ -1,0 +1,36 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #4f46e5;
+  --accent-color: #22c55e;
+  --text-color: #374151;
+  --bg-color: #ffffff;
+  --gray-light: #f3f4f6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--bg-color);
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-6 text-gray-800;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:transform hover:scale-105;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300;
+}
+
+.section-divider {
+  @apply border-t border-gray-200 my-12;
+}
